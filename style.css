@@ -2,19 +2,20 @@
   background-color: hsl(0, 0%, 100%);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
   border-radius: 0.625rem;
-  max-width: 17rem;
-  padding: 1rem;
+  max-width: 90vw;
+  max-width: clamp(15rem, 40vw, 20rem);
+  padding: clamp(0.5rem, 2vw, 1.5rem); ;
   margin-bottom: 1rem;
 }
 img {
+  width: 100%; /* image fills card width */
+  height: auto; /* maintain aspect ratio */
+  max-width: 100%; /* prevent overflow */
   border-radius: 0.625rem;
-  max-height: 18rem;
-  max-width: 18rem;
-  width: 100%;
 }
 body {
   background-color: hsl(218, 23%, 78%);
-  font-size: 15px;
+  font-size: 15rem;
   font-family: "Outfit", sans-serif;
   display: flex;
   flex-direction: column;
